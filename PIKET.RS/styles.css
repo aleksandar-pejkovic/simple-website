@@ -1,0 +1,193 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: ghostwhite;
+}
+
+header {
+  display: flex;
+  background-color: crimson;
+  padding: 10px;
+  color: ivory;
+  align-items: center;
+}
+
+header h2 {
+  margin-left: 20px;
+}
+
+.logo {
+  background-color: ivory;
+  height: 60px;
+  border: 3px outset teal;
+  border-radius: 20px;
+}
+
+.logo:hover {
+  border-radius: 50px;
+  background-color: white;
+}
+
+nav {
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: ivory;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid midnightblue;
+  border-bottom: 2px solid midnightblue;
+}
+
+nav a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 20px;
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+.images {
+  position: relative;
+}
+
+.mySlides {
+  height: auto;
+  width: 100%;
+  min-height: 800px;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.previous {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  background: none;
+  border: 1px solid black;
+  color: gray;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  background: none;
+  border: 1px solid black;
+  color: gray;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.previous:hover {
+  border: 1px white solid;
+  color: ivory;
+  background-color: black;
+}
+
+.next:hover {
+  border: 1px white solid;
+  color: ivory;
+  background-color: black;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.h3 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.description p {
+  padding: 1rem;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.brands a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stLogo {
+  margin: 30px;
+  width: 300px;
+  padding: 2px;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+}
+
+.contact-info a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.elfsight-app-07c76350-03e4-40c9-877c-5132bc857d3c {
+  width: 100%;
+}
+
+footer {
+  background-color: maroon;
+  padding: 10px;
+  text-align: center;
+  color: ivory;
+}
+
+@media (max-width: 1200px) {
+  .brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mySlides {
+    min-height: 500px;
+    transform: scale(1);
+  }
+
+  .description {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mySlides {
+    min-height: 300px;
+  }
+
+}
